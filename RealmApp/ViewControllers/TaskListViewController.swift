@@ -102,10 +102,12 @@ final class TaskListViewController: UITableViewController {
         
         tableView.reloadData()
     }
+    
     @objc private func addButtonPressed() {
         showAlert()
     }
 }
+
 // MARK: - AlertController
 extension TaskListViewController {
     private func showAlert(with taskList: TaskList? = nil, completion: (() -> Void)? = nil) {
